@@ -1,19 +1,19 @@
 # Base configs
-baseurl: "https://photos.pwncnc.com"
+baseurl: ""
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 google_analytics: ""
 
 # UI configs
-title: "Photography by PwnCNC"
-subtitle: "See the world through my eyes!"
+title: "Photos by PwnCNC"
+subtitle: "Don't just own your CNC, dominate it!"
 author: "Daniel Moran"
 header:
- title: "Photography"
+ title: "Photos"
  subtitle: "by PwnCNC"
 footer:
  name: "Want to see some more photos?"
- bio: "I'm the owner of PwnCNC and own many different CNC brands with various configurations.  I'm happy to take specific photos to help you out.  Let me know which ones you'd like to see, info@pwncnc.com"
+ bio: "I'm the owner of PwnCNC and we have many different CNC machine brands with various configurations.  I'm happy to take specific photos to help you out.  Let me know which ones you'd like to see, info@pwncnc.com"
  github: ""
 web_design: ""
 social_urls:

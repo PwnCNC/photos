@@ -21,8 +21,10 @@ gulp.task('resize', function () {
         .pipe(gulp.dest('images/thumbs'));
 });
 
-gulp.task('del', gulp.series('resize'), function () {
-    return del(['images/*.*']);
+gulp.task('clean', function () {
+    return del(['./images/*.*']).then(() => {
+        return del(['./xc/images/*.*']);
+    });
 });
 
 // compile scss to css
@@ -47,7 +49,7 @@ gulp.task('minify-js', function () {
 });
 
 // default task
-gulp.task('default', gulp.series('del'));
+gulp.task('default', gulp.series(['resize', 'clean']));
 
 // scss compile task
 gulp.task('compile-sass', gulp.parallel('sass', 'minify-js'));
